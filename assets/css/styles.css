@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a3b);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6198ff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+  font-size: 1rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #6198ff;
+}
+
+/* Dark Mode Button */
+.dark-mode-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dark-mode-btn:focus {
+  outline: none;
+}
+
+.dark-mode-icon {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.dark-mode-btn:hover .dark-mode-icon {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* Home Section */
+#home {
+  text-align: center;
+  background: linear-gradient(135deg, #6198ff, #010e1d);
+  color: #fff;
+  padding: 100px 0;
+}
+
+#home .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#home .btn-primary {
+  background: #fff;
+  color: #6198ff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#home .btn-primary:hover {
+  background: #6198ff;
+  color: #fff;
+}
+
+/* Projects Section */
+#projects {
+  background: #2a2a3b;
+  color: #fff;
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #6198ff;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Contact Section */
+#contact {
+  background: linear-gradient(135deg, #010f18, #6198ff);
+  color: #fff;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contact-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #6198ff;
+  outline: none;
+}
+
+.contact-form button {
+  background: #fff;
+  color: #6198ff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #6198ff;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #1e1e2f;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Button Group Styling */
+.btn-group {
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-group .btn-primary {
+  background: #fff;
+  color: #6198ff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px 0 0 25px; /* Rounded left side */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-group .btn-primary:hover {
+  background: #6198ff;
+  color: #fff;
+}
+
+.btn-group .dropdown-toggle-split {
+  background: #fff;
+  color: #6198ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 25px 25px 0; /* Rounded right side */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-group .dropdown-toggle-split:hover {
+  background: #6198ff;
+  color: #fff;
+}
+
+.btn-group .dropdown-toggle-split::after {
+  margin-left: 0.5rem;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 0; /* Align dropdown with the button */
+}
+
+.dropdown-item {
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #6198ff;
+  color: #fff;
+}
+
+/* Main button styling */
+#download-cv-btn {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#download-cv-btn:hover {
+  background-color: #fff;
+  color: #6198ff;
+}
