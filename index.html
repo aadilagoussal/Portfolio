@@ -1,97 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Aadil Agoussal</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" />
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-dark navbar-expand-lg" aria-label="Main">
-    <div class="container">
-      <a href="#home" class="navbar-brand d-inline-flex text-uppercase">Logo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-        <i class="material-icons icon-2x" aria-hidden="true">menu</i>
-      </button>
-      <div class="collapse navbar-collapse text-uppercase" id="navbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button id="dark-mode-toggle" class="btn btn-outline-light ms-3">Dark Mode</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - aadil agoussal</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg" aria-label="Main">
+      <div class="container">
+        <a href="#home" class="navbar-brand">AADIL AGOUSSAL</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button id="dark-mode-toggle" class="dark-mode-btn">
+          <img
+            src="assets/images/dark-mode-icon.svg"
+            alt="Dark Mode"
+            class="dark-mode-icon"
+          />
+        </button>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="section">
-    <div class="container text-center fade-in">
-      <img src="avatar.jpg" alt="Your Avatar" class="rounded-circle avatar" />
-      <h1 class="color-wave">Aadil Agoussal</h1>
-      <p class="subtitle">Master's Student in Electrical Engineering</p>
-      <a href="Aadil-Agoussal-CV.pdf" download class="btn btn-primary">Download My CV</a>
-      <div class="social-icons mt-3">
-        <a href="https://www.linkedin.com/in/aadil-agoussal" target="_blank" class="me-3 social-icon">
-          <img src="linkedin-logo.png" alt="LinkedIn" class="icon" />
-        </a>
-        <a href="https://www.instagram.com/adil.agou" target="_blank" class="social-icon">
-          <img src="instagram-logo.png" alt="Instagram" class="icon" />
-        </a>
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="container text-center">
+        <img
+          src="assets/images/avatar.png"
+          alt="Your Avatar"
+          class="rounded-circle avatar"
+        />
+        <h1>AADIL AGOUSSAL</h1>
+        <p>Master's Student in Electrical Engineering</p>
+        <div class="btn-group">
+          <!-- Main Button -->
+          <a id="download-cv-btn" href="#" class="btn btn-primary"> Resume </a>
+          <!-- Dropdown Toggle -->
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="visually-hidden">Toggle Language</span>
+          </button>
+          <!-- Dropdown Menu -->
+          <ul class="dropdown-menu">
+            <li>
+              <button class="dropdown-item" type="button" data-lang="en">
+                EN
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button" data-lang="fr">
+                FR
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <div class="container fade-in">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project">
-          <h3>Smart Grid Optimization</h3>
-          <p>Optimizing energy distribution using machine learning.</p>
-        </div>
-        <div class="project">
-          <h3>IoT-based Home Automation</h3>
-          <p>Designing IoT systems to control home devices remotely.</p>
-        </div>
-        <div class="project">
-          <h3>Electric Vehicle Battery Management</h3>
-          <p>Developing algorithms for efficient battery usage.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project">
+            <h3>Project 1</h3>
+            <p>Sooon</p>
+          </div>
+          <div class="project">
+            <h3>Project 2</h3>
+            <p>Sooon</p>
+          </div>
+          <div class="project">
+            <h3>Project 3</h3>
+            <p>Sooon</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <div class="container fade-in">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out to me for collaboration or inquiries!</p>
-      <form action="https://example.com/submit" method="POST" class="contact-form">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" id="name" name="name" class="form-control" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" id="email" name="email" class="form-control" required />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form
+          action="https://formspree.io/f/xqapvkll"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="form-control"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
 
-  <footer class="text-center py-3">
-    <p>&copy; 2025 Aadil Agoussal. All rights reserved.</p>
-  </footer>
-</body>
+    <footer class="text-center py-3">
+      <p>
+        &copy; 2025
+        <a href="https://www.linkedin.com/in/aadil-agoussal" target="_blank"
+          >AADIL AGOUSSAL</a
+        >. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
+
